@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+a {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.skip-link {
+    left: 0;
+    top: -100px;
+    padding: 8px;
+    z-index: 100;
+    color: #ffffff;
+    position: absolute;
+    text-decoration: none;
+    background-color: #f7b3ce;
+}
+
+.skip-link:focus {
+    top: 80px;
+}
+
+a, button, 
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"] {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99;
+    height: 80px;
+    padding: 0 64px;
+    background-color: #f7b3ce;
+}
+
+nav h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav h1 a {
+    min-width: 44px;
+    min-height: 44px;
+    line-height: 44px;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #f75acf;
+}
+
+.menu-list {
+    display: flex;
+}
+
+.menu-list li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu-list a {
+    padding: 16px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-list a:hover {
+    color: #f75acf;
+    transition-duration: 0.2s;
+    border-bottom: 2px solid #f75acf;
+}
+
+.menu-button {
+    display: none;
+}
+
+.hero-image{
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    height: 600px;
+    filter: brightness(50%);
+}
+
+.hero-description {
+    width: 100%;
+    margin-top: -325px;
+    display: flex;
+    color: #ffffff;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-description h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.hero-description p {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-hero-section {
+    margin-top: 25px;
+}
+
+.btn-hero {
+    width: 23%;
+    min-width: 100px; 
+    min-height: 50px;
+    border: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: auto;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f7b3ce;
+}
+
+.btn-hero:hover {
+    background-color: #f75acf;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 100%;
+    margin-bottom: 20px;
+}
+
+.content__heading {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.restaurant-list {
+    display: grid;
+    gap: 20px;
+    margin: 32px 0;
+    grid-template-columns: 1fr;
+}
+
+.restaurant-item {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 #5c5a5a;
+}
+
+.restaurant-header {
+    position: relative;
+}
+
+.restaurant-item img {
+    width: 100%;
+    max-height: 200px;
+}
+
+.restaurant-item .restaurant-rating {
+    right: 0;
+    padding: 8px;
+    color: #ffffff;
+    position: absolute;
+    display: inline-block;
+    background-color: #faadcc;
+}
+
+.restaurant-item .restaurant-rating__score {
+    margin-left: 10px;
+}
+
+.restaurant-item .restaurant-info {
+    padding: 16px;
+    text-align: center;
+}
+
+.restaurant-item .restaurant-title a {
+    padding: 10px;
+    font-size: 22px;
+    color: #fb90bb;
+    text-decoration: none;
+}
+
+.restaurant-item .restaurant-city {
+    font-size: 17px;
+    padding-top: 10px;
+    color: #faa6c8;
+    font-weight: lighter;
+}
+
+.restaurant-item .restaurant-description {
+    margin-top: 12px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+}
+
+.detail, restaurant-review {
+    width: 70%;
+    display: flex;
+    margin: 16px auto ;
+    flex-direction: column;
+}
+
+.detail h2, restaurant-review h2 {
+    font-size: 25px;
+    padding-bottom: 15px;
+    color: #f75acf;
+    text-align: center;
+}
+
+.detail .info, .detail .overview, restaurant-review {
+    padding: 20px;
+    margin-top: 16px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+
+.detail .restaurant-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #fb90bb;
+    font-weight: bold;
+}
+
+.detail img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.detail .info ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.detail .info ul li {
+    margin-bottom: 12px;
+}
+
+.detail .info h3 {
+    color: #fb90bb;
+}
+
+.detail .overview p {
+    text-align: justify;
+}
+
+.review {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.review .name {
+    font-weight: 600;
+}
+
+.review .date {
+    font-size: small;
+    color: #ffffff;
+}
+
+.menu-button {
+    width: 44px;
+    height: 44px;
+}
+
+.like {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffeaea;
+    font-size: 15px;
+    color: #ff0404;
+    cursor: pointer;
+    position: fixed;
+    bottom: 11px;
+    right: 11px;
+    border-radius: 100%;
+    border: 2px solid #000000; 
+    text-align: center; 
+    line-height: 44px; 
+}
+
+.search-favorite {
+    width: 100%;
+    font-size: 1rem;
+    min-height: 44px;
+    line-height: 1.5;
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 1px solid #f7b3ce;
+    display: block;
+    color: #000000;
+    background-color: #ffffff;
+    background-clip: padding-box;
+}
+
+.search-favorite:focus {
+    color: #000000;
+    border-color: rgb(250, 135, 181);
+    background-color: #ffffff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #f75acf;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding: 22px;
+    background-color: #f7b3ce;
+    min-height: 44px !important;
+}
